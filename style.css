@@ -2,7 +2,7 @@ body {
     background-color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
-    margin-left: 300px;
+    margin-left: 50px;
 
 }
 
@@ -16,6 +16,19 @@ h3 {
 ul {
     color: white
 }
+
+.column {
+    float: left;
+    width: 40%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 .welcome{
     color: white;
     margin-top: 40px;
