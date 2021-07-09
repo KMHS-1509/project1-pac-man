@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(ghost.isScared && squares [ghost.currentIndex].classList.contains('pac-man')){
             squares [ghost.currentIndex].classList.remove(ghost.className,'ghost','scared-ghost')
             ghost.currentIndex = ghost.startIndex
-            score +=100
+            score +=75
             squares[ghost.currentIndex].classList.add(ghost.className,'ghost')
         }
         checkForGameOver()
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function checkForWin(){
-        if (score >= 50) {
+        if (score >= 100) {
             ghosts.forEach(ghost => clearInterval(ghost.timerId))
             document.removeEventListener('keyup', movePacman)
             setTimeout(function(){alert("You won!");},500)

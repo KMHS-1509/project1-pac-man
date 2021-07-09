@@ -1,9 +1,33 @@
+body {
+    background-color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin-left: 300px;
+
+}
+
+h1 {
+    color: pink
+}
+h3 {
+    color: yellow
+}
+
+ul {
+    color: white
+}
+.welcome{
+    color: white;
+    margin-top: 40px;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
     width: 560px;
     height: 560px;
     border: solid black;
+    position: center, absolute;
 }
 
 .grid div {
